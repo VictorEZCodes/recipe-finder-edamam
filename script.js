@@ -37,6 +37,9 @@ async function renderData() {
     const calories = document.createElement('p');
     calories.textContent = `Calories: ${Math.round(item.recipe.calories)}`;
 
+    const totalWeight = document.createElement('p');
+    totalWeight.textContent = `Total Weight: ${Math.round(item.recipe.totalWeight)}`;
+
     const ingredients = document.createElement('p');
     ingredients.textContent = 'Ingredients: ' + item.recipe.ingredientLines.join(', ');
 
@@ -48,6 +51,7 @@ async function renderData() {
     recipe.appendChild(title);
     recipe.appendChild(image);
     recipe.appendChild(calories);
+    recipe.appendChild(totalWeight);
     recipe.appendChild(ingredients);
     recipe.appendChild(link);
 

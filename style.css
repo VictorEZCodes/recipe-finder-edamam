@@ -1,0 +1,45 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.input {
+  margin: 50px 0;
+}
+
+.displayRecipes,
+.input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.recipe {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.recipe h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.recipe img {
+  width: 100%;
+  padding-top: 25px;
+}
+
+.recipe p {
+  margin: 10px 0;
+}
+
+.recipe a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
