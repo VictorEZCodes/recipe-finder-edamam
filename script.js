@@ -1,6 +1,12 @@
 let button = document.querySelector('.button');
 let inputValue = document.querySelector('.inputValue');
 
+function validate(event) {
+  if (event.code === "Enter") {
+    renderData();
+  }
+}
+
 async function fetchData() {
   try {
     const response = await fetch(`https://api.edamam.com/search?q=${inputValue.value}&app_id=fac26c66&app_key=4a9974440d1ea9d6e3007555f812353a`);
